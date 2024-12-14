@@ -1,0 +1,303 @@
+body{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 50%;
+    border-right: 20px ridge rgba(66, 172, 184, 0.702);
+    border-left: 20px groove rgba(66, 172, 184, 0.702);
+    border-top: 20px groove rgba(66, 172, 184, 0.702);
+    border-bottom: 20px ridge rgba(66, 172, 184, 0.702);
+    overflow: hidden;
+}
+.demoContainer{
+    padding: 20px 20px 2px 20px;
+}
+.demoWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+}
+.mainContainer{
+    padding: 20px;
+}
+.mainWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.inputContainer{
+border-top: 10px solid rgba(255, 0, 0, 0.622);
+border-bottom: 10px solid rgba(255, 0, 0, 0.622);
+border-left: 5px solid rgba(255, 0, 0, 0.622);
+border-right: 5px solid rgba(255, 0, 0, 0.622);
+border-radius: 50px;
+width: 40%;
+overflow: hidden;
+}
+.mobileBody{
+    border: 1px solid rgba(255, 0, 0, 0.622);
+    width: 100%;
+    background-color: rgba(255, 0, 0, 0.323);
+    padding: 50px 0px 60px 0px;
+}
+.mobileScreen{
+    background-color: white;
+    margin: 0px 10px;
+    width:267.84px;
+    height: 363.8px;
+}
+.reaction-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    height:15px;
+    position: relative;
+    bottom: 31px;
+    animation: pulse 1s linear infinite;
+}
+@keyframes pulse {
+    0%{transform: scale(1)}
+    25%{transform: scale(1.3)}
+    50%{transform: scale(1.5)}
+    75%{transform: scale(1.3)}
+    100%{transform: scale(1)}
+}
+.sensorsContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: -20px 0px 20px;
+}
+.sensorsContainer .circleSensor{
+    background-color: cadetblue;
+    border-radius: 50%;
+    padding: 5px;
+}
+.line{
+    background-color: cadetblue;
+    border-radius: 5px;
+    padding: 5px 25px;   
+}
+.inputWrapper{
+    width: 100%;
+    text-align: center;
+}
+.inputWrapper i{
+    position: relative;
+    font-size: 30px;
+}
+.inputWrapper input{
+    width: 100%;
+    padding: 10px 0px;
+    text-align: center;
+    outline: none;
+    border: none;
+    font-size: 25px;
+    font-family: "Ga Maamli", sans-serif;
+}
+.range{
+    font-family: "Ga Maamli", sans-serif;
+}
+.buttonsWrapper{
+    margin: 10px;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+.buttonsRow{
+width: 100%;
+display: flex;
+gap: 10px;
+}
+.buttonsRow:last-child{
+    padding-bottom: 15px;
+}
+.buttonsRow button{
+    width: 100%;
+    background-color: cadetblue;
+    box-shadow: 0px 7px rgb(61, 105, 107);
+    padding: 10px 0px;
+    border: none;
+    outline: none;
+    font-size: 24px;
+    font-family: "Ga Maamli", sans-serif;
+    cursor: pointer;
+}
+.buttonsRow button:active {
+    box-shadow: 0 3px #666;
+    transform: translateY(4px);
+}
+.checkBtnWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px -20px 0px;
+}
+.checkBtnWrapper .button{
+    background-color: cadetblue;
+    border-radius: 5px 15px;
+    padding: 5px 15px;
+    border: none;
+    outline: none;
+    width: 50px;
+    box-shadow: 0px 7px rgb(61, 105, 107);
+    font-family: "Ga Maamli", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+.checkBtnWrapper .button:active{
+    box-shadow: 0 3px #666;
+    transform: translateY(4px);
+}
+.resultsContainer{
+    text-align: center;
+    width: 321.54px;
+    height: 421.43px;
+}
+.winMessageContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.winMessage{
+    font-size: 70px;
+    font-family: "Patua One", serif;
+}
+
+.attemptsMessage{
+    font-size:70px;
+    font-family: "Patua One", serif;
+}
+.resultsContainer h2{
+    font-family: "Matemasie", sans-serif;
+}
+.attemptsContainer .circle{
+    border-radius: 50%;
+    padding: 7px;
+    margin: 5px;
+    background-color: rgb(215, 215, 3);
+}
+.attemptsContainer{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 2px;
+    gap: 6px;
+}
+.instructionsContainer{
+    font-family: "Patua One", serif;
+}
+.guessHistory{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.less{
+    transform: rotate(180deg);
+}
+.guessHistory .Box{
+    background-color: cadetblue;
+    width: 50%;
+    height: 240px;
+}
+.guessHistory .Box h3{
+        font-family: "Jersey 10", sans-serif;
+        font-weight: 400;
+        font-size: 25px;
+        font-style: normal;
+        color: rgba(245, 245, 117, 0.993);
+}
+.lessthan{
+    font-family: "Ga Maamli", sans-serif;   
+}
+.greaterthan{
+    font-family: "Ga Maamli", sans-serif;   
+}
+.unlockMassage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 25px;
+    font-family: "Patua One", serif;
+}
+.levelSelect{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    gap: 10px;
+    margin-top: 10px;
+    width: 100%;
+    position: relative;
+    top: 65px;
+    transition: 1s;
+}
+.demoLevel{
+    width: 100%;
+}
+.levelBTN{
+    width: 100%;
+    padding: 5px;
+    background-color: cadetblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+      
+}
+
+.levelBTN h4:first-child{
+margin: 5px 0px -20px 0px;
+font-family: "Jersey 10", sans-serif;
+color:  rgba(245, 245, 117, 0.993);
+font-size: 25px;
+letter-spacing: 1px;
+}
+.demoMobileWrapper{
+display: none;
+border-top: 10px solid rgba(255, 0, 0, 0.622);
+border-bottom: 10px solid rgba(255, 0, 0, 0.622);
+border-left: 5px solid rgba(255, 0, 0, 0.622);
+border-right: 5px solid rgba(255, 0, 0, 0.622);
+border-radius: 50px;
+width: 313.44px;
+height: 490px;
+overflow: hidden;
+}
+#demoMobile{
+    border: 1px solid rgba(255, 0, 0, 0.622);
+    height: 490.8px;
+    background-color: rgba(255, 0, 0, 0.323);
+    padding: 50px 0px 60px 0px;
+}
+
+#demoMobile .demoMobileScreen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    margin: 0px 10px;
+    width:291.84px;
+    height:368.8px;
+    font-family: "Matemasie", sans-serif;
+}
+.checkBtnWrapper{
+    cursor: pointer;
+}

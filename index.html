@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ga+Maamli&family=Jersey+10&family=Matemasie&family=Patua+One&display=swap" rel="stylesheet">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUESS THE NUMBER</title>
+</head>
+<body>
+    <div class="container">
+    <div class="demoContainer">
+        <div class="demoWrapper">
+            <div class="demoMobileWrapper">
+                <div id="demoMobile">
+                    <div class="sensorsContainer">
+                        <div class="circleSensor"></div>
+                        <div class="circleSensor"></div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="demoMobileScreen">
+                           <h2>SELECT</h2>
+                           <h2>A</h2>
+                           <h2>LEVEL!</h2> 
+                    </div>
+               </div>
+            </div>
+            <div class="levelSelect demoLevel" id="levelSelect">
+                <div id="easyButton" class="levelBTN">
+                   <h4>EASY</h4>
+                   <h4 class="range">1 TO 10</h4> 
+                </div>
+                <div id="mediumButton" class="levelBTN">
+                    <h4>MEDIUM</h4>
+                    <h4 class="range">1 TO 50</h4>
+                </div>
+                <div id="hardButton" class="levelBTN">
+                    <h4>HARD</h4>
+                    <h4 class="range">1 TO 100</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mainContainer">
+        <div class="mainWrapper">
+            <div class="inputContainer">
+                <div class="mobileBody">
+                    <div class="sensorsContainer">
+                        <div class="circleSensor"></div>
+                        <div class="circleSensor"></div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="mobileScreen">
+                        <div class="attemptsContainer">
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                        </div>
+                        
+                        <div class="inputWrapper">
+                            <input type="text" placeholder="0" id="number">
+                            <div class="reaction-container"></div>
+                        </div>
+                            
+                        <div class="buttonsWrapper">
+                            <div class="buttonsRow">
+                                <button>1</button>
+                                <button>2</button>
+                                <button>3</button>
+                            </div>
+                            <div class="buttonsRow">
+                                <button>4</button>
+                                <button>5</button>
+                                <button>6</button>
+                            </div>
+                            <div class="buttonsRow">
+                                <button>7</button>
+                                <button>8</button>
+                                <button>9</button>
+                            </div>
+                            <div class="buttonsRow">
+                                <button>DEL</button>
+                                <button>0</button>
+                                <button>AC</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkBtnWrapper">
+                        <div onclick="GuessNumber()" class="button">GUESS</div>
+                    </div>
+               </div>
+            </div>
+        <div class="resultsContainer">
+            <div class="instructionsContainer"></div>
+            <h2>HINTS</h2>
+            <div class="guessHistory">
+                <div class="Box">
+                    <h3>LESS THAN!</h3>
+                    <div class="lessthan"></div>
+                </div>
+                <div class="Box">
+                    <h3>GREATER THAN!</h3>
+                    <div class="greaterthan"></div>
+                </div>
+            </div>           
+        </div>
+       </div>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
